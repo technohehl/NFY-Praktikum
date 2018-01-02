@@ -14,7 +14,7 @@ if(isset($_POST["submit"])){
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
 </head>
-<body style="background-image:url(img/parabola.png)">
+<body>
 <div class="content">
     <div class="title">
         <h1><a href="index.php">Praktikum bei Newsfactory</a></h1>
