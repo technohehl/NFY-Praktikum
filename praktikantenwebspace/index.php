@@ -10,14 +10,14 @@ if(isset($_POST["submit"])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
 </head>
 <body style="background-image:url(img/parabola.png)">
-<div>
-    <div>
-        <h1>Praktikum bei Newsfactory</h1>
+<div class="content">
+    <div class="title">
+        <h1><a href="index.php">Praktikum bei Newsfactory</a></h1>
     </div>
     <ul>
         <li><a href="#datum">Datum</a></li>

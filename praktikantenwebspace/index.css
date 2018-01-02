@@ -1,0 +1,19 @@
+.content {
+    background: white;
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.title a {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+    color: grey;
+}
