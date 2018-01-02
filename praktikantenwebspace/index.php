@@ -14,11 +14,29 @@ if(isset($_POST["submit"])){
     <link rel="icon" type="image/svg+xml" href="img/libreboot.png" sizes="any">
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider();
+        });
+    </script>
+
 </head>
 <body>
 <div class="content">
     <div class="title">
         <h1><a href="index.php">Praktikum bei Newsfactory</a></h1>
+    </div>
+
+    <div class="slider">
+        <div><img class="single-slide" src="img/slider/trees.jpg"></div>
+        <div><img class="single-slide" src="img/slider/street-green.jpg"></div>
+        <div><img class="single-slide" src="img/slider/parabola.jpg"></div>
+        <div><img class="single-slide" src="img/slider/waterfall.jpg"></div>
     </div>
 
     <ul class="menu">

@@ -118,3 +118,7 @@ input[type=submit]:hover {
     display: table;
     clear: both;
 }
+
+.single-slide {
+    background-position: center;
+}
