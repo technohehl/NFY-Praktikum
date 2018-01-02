@@ -19,6 +19,11 @@ if(isset($_POST["submit"])){
     <div class="title">
         <h1><a href="index.php">Praktikum bei Newsfactory</a></h1>
     </div>
+
+    <div class="slider">
+
+    </div>
+
     <ul class="menu">
         <li><a href="#datum">Datum</a></li>
         <li><a href="#formular">Formular</a></li>
