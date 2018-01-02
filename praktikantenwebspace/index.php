@@ -14,11 +14,16 @@ if(isset($_POST["submit"])){
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
 </head>
-<body>
+<body style="background-image:url(img/parabola.png)">
 <div>
     <div>
         <h1>Praktikum bei Newsfactory</h1>
     </div>
+    <ul>
+        <li><a href="#datum">Datum</a></li>
+        <li><a href="#formular">Formular</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
 
     <div>
     <h2>Datum</h2>
