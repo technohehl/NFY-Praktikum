@@ -19,32 +19,35 @@ if(isset($_POST["submit"])){
     <div class="title">
         <h1><a href="index.php">Praktikum bei Newsfactory</a></h1>
     </div>
-    <ul>
+    <ul class="menu">
         <li><a href="#datum">Datum</a></li>
         <li><a href="#formular">Formular</a></li>
         <li><a href="#about">About</a></li>
     </ul>
 
     <div>
-    <h2>Datum</h2>
+    <h2 id="datum">Datum</h2>
         <p>Das Datum ist: <?php echo date("d F Y"); ?></p>
     </div>
-    <h2>Formular</h2>
+
+    <div>
+    <h2 id="formular">Formular</h2>
         <h3>Eingabe</h3>
         <div>
-        <form action="" method="post">
-            Name: <br><input type="text" name="name"><br>
-            mail Adresse: <br><input type="email" name="email"><br>
-            Nachricht: <br><textarea name="message"></textarea><br>
-            <input type="submit" name="submit" value="Senden"><br>
-        </form>
+            <form action="" method="post">
+                Name: <br><input type="text" name="name"><br>
+                mail Adresse: <br><input type="email" name="email"><br>
+                Nachricht: <br><textarea name="message"></textarea><br>
+                <input type="submit" name="submit" value="Senden"><br>
+            </form>
         </div>
         <h3>Ausgabe</h3>
             <div>
                 <p>Name: <?php echo $name; ?></p>
                 <p>Email: <?php echo $email; ?></p>
                 <p>Nachricht: <?php echo $message; ?></p>
-            </div<
+            </div>
+    </div>
 </div>
 </body>
 </html>
