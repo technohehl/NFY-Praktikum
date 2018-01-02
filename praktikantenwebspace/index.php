@@ -22,9 +22,9 @@ if(isset($_POST["submit"])){
     </div>
 
     <ul class="menu">
-        <li><a href="#datum">Datum</a></li>
-        <li><a href="#formular">Formular</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#datum">Datum</a></li>
+        <li class="menu-item"><a href="#formular">Formular</a></li>
+        <li class="menu-item"><a href="#about">About</a></li>
     </ul>
 
     <div id="datum">
@@ -37,44 +37,50 @@ if(isset($_POST["submit"])){
         <h3>Eingabe</h3>
         <div class="form">
             <form action="" method="post">
-                <div class="row">
+                <div class="zeile">
                     <div class="form-label">
                         <label for="name">Name</label>
                     </div>
                     <div class="form-field">
-                        <input type="text" id="name" placeholder="Ihr Name...">
+                        <input type="text" id="name" name="name" placeholder="Ihr Name..." required>
                     </div>
                 </div>
-                <div class="row">
+                <div class="zeile">
                     <div class="form-label">
                         <label for="Email">Name</label>
                     </div>
                     <div class="form-field">
-                        <input type="text" id="email" placeholder="Ihre Email Adresse...">
+                        <input type="email" id="email" name="email"  placeholder="Ihre Email Adresse..." required>
                     </div>
                 </div>
-                <div class="row">
+                <div class="zeile">
                     <div class="form-label">
                         <label for="nachricht">Nachricht</label>
                     </div>
                     <div class="form-field">
-                        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht..." style="height:200px"></textarea>
+                        <textarea id="nachricht" name="message" placeholder="Ihre Nachricht..." style="height:200px" required></textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
+                <div class="zeile">
+                    <input type="submit" name="submit" value="Submit">
                 </div>
             </form>
         </div>
 
-        <h3>Ausgabe</h3>
+        <?php
+        if(isset($_POST["submit"])){ ?>
+            <h3>Ausgabe</h3>
             <div>
                 <p>Name: <?php echo $name; ?></p>
                 <p>Email: <?php echo $email; ?></p>
                 <p>Nachricht: <?php echo $message; ?></p>
             </div>
+        <?php }
+        ?>
+
     </div>
     <div id="quellen">
+        <h2>Quellen</h2>
         <ul>
             <li>XZY</li>
             <li>ABC</li>
