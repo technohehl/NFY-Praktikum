@@ -43,6 +43,7 @@ if(isset($_POST["submit"])){
         <li class="menu-item"><a href="#datum">Datum</a></li>
         <li class="menu-item"><a href="#formular">Formular</a></li>
         <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
 
     <div id="datum">
@@ -95,13 +96,17 @@ if(isset($_POST["submit"])){
             </div>
         <?php }
         ?>
-
     </div>
-    <div id="quellen">
+
+    <div id="about">
+        <h2>About</h2>
+        <p>This page was developed with ❤</p>
+    </div>
+
+    <div id="sources">
         <h2>Quellen</h2>
         <ul>
-            <li>XZY</li>
-            <li>ABC</li>
+            <li><a href="https://github.com/stevenwanderski/bxslider-4">bxslider</a></li>
         </ul>
     </div>
 </div>
