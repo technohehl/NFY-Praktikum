@@ -10,6 +10,7 @@ if(isset($_POST["submit"])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
 </head>
