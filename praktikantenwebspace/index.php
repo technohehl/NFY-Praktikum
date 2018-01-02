@@ -46,6 +46,17 @@ if(isset($_POST["submit"])){
         <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
 
+    <div id="section1"</div>
+    <h2>Section1</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</p>
+    </div>
+
     <div id="datum">
     <h2>Datum</h2>
         <p>Das Datum ist: <?php echo date("d F Y"); ?></p>
@@ -100,14 +111,19 @@ if(isset($_POST["submit"])){
 
     <div id="about">
         <h2>About</h2>
-        <p>This page was developed with ❤</p>
+        <p>This page was developed with ❤ by <a href="https://technohehl.de">Raphael Hehl</a></p>
     </div>
 
     <div id="sources">
         <h2>Quellen</h2>
         <ul>
             <li><a href="https://github.com/stevenwanderski/bxslider-4">bxslider</a></li>
+            <li><a href="https://jquery.com/">jQuery</a></li>
         </ul>
+    </div>
+
+    <div class="footer">
+        <p>Made with ❤ by Raphael Hehl</p>
     </div>
 </div>
 </body>

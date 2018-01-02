@@ -60,6 +60,9 @@ h2 {
 /* text */
 p {
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    text-align: justify;
 }
 
 /* form */
@@ -82,7 +85,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -92,7 +95,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #DC143C;
 }
 
 .form {
@@ -121,4 +124,9 @@ input[type=submit]:hover {
 
 .single-slide {
     background-position: center;
+}
+
+/* footer */
+.footer {
+    text-align: center;
 }
