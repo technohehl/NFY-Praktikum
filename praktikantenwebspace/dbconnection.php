@@ -26,6 +26,13 @@ if(isset($_POST["name"], $_POST["email"], $_POST["message"])){
     mysqli_query($mysqli, $query);
     mysqli_close($mysqli);
 
+    // Email
+    $empfaenger = "support@technohehl.de";
+    $betreff = "Form Submission";
+    $nachricht = "Name: " . $name . "\n\rEmail Adresse: " . $email . "\n\rNachricht: " . $message . "\n\rIP-Adresse: " . $ipaddress . "\n\r";
+
+    mail($empfaenger, $betreff, $nachricht);
+
     echo "Herzlichen Glückwunsch! Sie haben sich erfolgreich eingetragen\n\rName: " . $name . "\n\rEmail Adresse: " . $email . "\n\rNachricht: " . $message . "\n\rIP-Adresse: " . $ipaddress . "\n\r";
 }
 ?>
