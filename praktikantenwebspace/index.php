@@ -103,17 +103,6 @@
                 </div>
             </form>
         </div>
-
-        <?php
-        if(isset($_POST["submit"])){ ?>
-            <h3>Ausgabe</h3>
-            <div>
-                <p>Name: <?php echo $name; ?></p>
-                <p>Email: <?php echo $email; ?></p>
-                <p>Nachricht: <?php echo $message; ?></p>
-            </div>
-        <?php }
-        ?>
     </div>
 
     <div id="about">
