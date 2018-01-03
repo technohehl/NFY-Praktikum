@@ -24,6 +24,8 @@ if(isset($_POST["name"], $_POST["email"], $_POST["message"])){
     $query = "INSERT INTO NFYPraktikum (Name,Email,Message,IPAddress) VALUES ('".$name."', '".$email."', '".$message."', '".$ipaddress."')";
 
     mysqli_query($mysqli, $query);
+    mysqli_close($mysqli);
+
     echo "Herzlichen Glückwunsch! Sie haben sich erfolgreich eingetragen\n\rName: " . $name . "\n\rEmail Adresse: " . $email . "\n\rNachricht: " . $message . "\n\rIP-Adresse: " . $ipaddress . "\n\r";
 }
 ?>
