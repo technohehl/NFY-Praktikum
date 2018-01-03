@@ -1,12 +1,3 @@
-<?php
-if(isset($_POST["submit"])){
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +57,7 @@ if(isset($_POST["submit"])){
     <h2>Formular</h2>
         <h3>Eingabe</h3>
         <div class="form">
-            <form action="" method="post">
+            <form action="dbconnection.php" method="post">
                 <div class="zeile">
                     <div class="form-label">
                         <label for="name">Name</label>
