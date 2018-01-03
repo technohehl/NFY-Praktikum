@@ -16,6 +16,22 @@
         });
     </script>
 
+    <script>
+        function sendData() {
+            $.ajax({
+                type: 'POST',
+                url: 'dbconnection.php',
+                data: {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        message: $('#nachricht').val()
+                    }
+            }).done(function (data){
+                alert(data);
+            });
+        }
+    </script>
+
 </head>
 <body>
 <div class="content">
@@ -57,7 +73,7 @@
     <h2>Formular</h2>
         <h3>Eingabe</h3>
         <div class="form">
-            <form action="dbconnection.php" method="post">
+            <form>
                 <div class="zeile">
                     <div class="form-label">
                         <label for="name">Name</label>
@@ -83,7 +99,7 @@
                     </div>
                 </div>
                 <div class="zeile">
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="button" name="submit" onclick="sendData()">
                 </div>
             </form>
         </div>
