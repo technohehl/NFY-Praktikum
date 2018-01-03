@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="zeile">
-                    <input type="button" name="submit" onclick="sendData()">
+                    <input type="button" name="submit" onclick="sendData()" value="Senden">
                 </div>
             </form>
         </div>
