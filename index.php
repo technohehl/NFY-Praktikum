@@ -34,6 +34,16 @@
                 });
             });
         }
+
+        // Hamburger Menu
+        function togglemenu() {
+            var hamburgermenu = document.getElementById("hamburger-menu");
+            if (hamburgermenu.className === "hamburger hamburger--elastic") {
+                hamburgermenu.className += "hamburger hamburger--elastic is-active";
+            } else {
+                hamburgermenu.className = "hamburger hamburger--elastic";
+            }
+        }
     </script>
 </head>
 <body>
@@ -56,7 +66,7 @@
         <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
 
-    <button class="hamburger hamburger--collapse" type="button">
+    <button id="hamburger-menu" class="hamburger hamburger--elastic" type="button" onclick="togglemenu()">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
