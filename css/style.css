@@ -23,7 +23,18 @@ body {
 }
 
 /* menu */
+.hamburger {
+
+}
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu {
+    display: none;
     list-style-type: none;
     background-color: black;
     margin: 0;
@@ -153,6 +164,14 @@ input[type=button]:hover {
     .content {
         width: 60%;
         padding: 50px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: none !important;
     }
 
     .menu-item a {

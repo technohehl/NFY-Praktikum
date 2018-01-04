@@ -66,11 +66,13 @@
         <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
 
+    <div class="hamburger-menu">
     <button id="hamburger-menu" class="hamburger hamburger--elastic" type="button" onclick="togglemenu()">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
     </button>
+    </div>
 
     <div id="section1">
     <h2>Section1</h2>
