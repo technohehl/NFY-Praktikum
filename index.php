@@ -137,6 +137,7 @@
             <li><a href="https://github.com/stevenwanderski/bxslider-4">bxslider</a></li>
             <li><a href="https://jquery.com/">jQuery</a></li>
             <li><a href="https://www.opendesktop.org/p/1025846/">Wallpaper</a></li>
+            <li><a href="https://github.com/jonsuh/hamburgers">Hamburgers</a></li>
         </ul>
     </div>
 
