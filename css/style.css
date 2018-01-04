@@ -144,7 +144,7 @@ input[type=button]:hover {
 /* Mediaqueries */
 @media only screen and (min-device-width: 900px) {
     body {
-        background-image: url("img/bluecurls.svg");
+        background-image: url("../img/bluecurls.svg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
