@@ -6,7 +6,7 @@ body {
 /* white page */
 .content {
     background: white;
-    padding: 50px;
+    padding: 10px;
     width: 100%;
     margin: auto;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .menu-item a {
-    font-size: 28px;
+    font-size: 14px;
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -127,11 +127,21 @@ input[type=button]:hover {
 }
 
 /* footer */
+.footer {
+    padding-top: 20px;
+}
+
 .footer p {
     text-align: center;
 }
 
-@media only screen and (min-device-width: 968px) {
+/* recaptcha layout */
+.g-recaptcha {
+    float: right;
+}
+
+/* Mediaqueries */
+@media only screen and (min-device-width: 900px) {
     body {
         background-image: url("img/bluecurls.svg");
         background-repeat: no-repeat;
@@ -141,6 +151,7 @@ input[type=button]:hover {
 
     .content {
         width: 60%;
+        padding: 50px;
     }
 
     .menu-item a {
