@@ -50,9 +50,10 @@ body {
 
 h2 {
     color: red;
-    border-bottom: 4px solid;
+    border-bottom: 6px solid;
     margin-top: 24px;
     padding-bottom: 4px;
+    background-color: lightgrey;
 }
 
 /* text */
@@ -155,7 +156,7 @@ input[type=button]:hover {
     }
 
     .menu-item a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     p {
