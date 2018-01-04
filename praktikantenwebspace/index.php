@@ -9,21 +9,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider();
         });
-        
+
         function sendData() {
             $.ajax({
                 type: 'POST',
                 url: 'dbconnection.php',
-                data: {
+                data:
+                {
                     name: $('#name').val(),
                     email: $('#email').val(),
-                    message: $('#nachricht').val()
-                    //captcha: grecaptcha.getResponse()
+                    message: $('#nachricht').val(),
+                    captcha: grecaptcha.getResponse()
                 }
             }).done(function (data){
                 alert(data);
@@ -63,13 +63,12 @@
         <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 
         <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</p>
-    </v>
+    </div>
 
     <div id="datum">
     <h2>Datum</h2>
         <p>Das Datum ist: <?php echo date("d F Y"); ?></p>
     </div>
-
     <div id="formular">
     <h2>Formular</h2>
         <h3>Eingabe</h3>
