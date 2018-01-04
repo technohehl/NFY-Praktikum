@@ -6,7 +6,7 @@
     <title>Praktikum bei Newsfactory</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/hamburgers.css"
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="icon" type="image/svg+xml" href="img/libreboot.png" sizes="any">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -55,6 +55,12 @@
         <li class="menu-item"><a href="#about">About</a></li>
         <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
+
+    <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
     <div id="section1">
     <h2>Section1</h2>
