@@ -5,27 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="img/libreboot.png" sizes="any">
     <meta charset="UTF-8">
     <title>Praktikum bei Newsfactory</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider();
         });
-    </script>
-
-    <script>
+        
         function sendData() {
             $.ajax({
                 type: 'POST',
                 url: 'dbconnection.php',
                 data: {
-                        name: $('#name').val(),
-                        email: $('#email').val(),
-                        message: $('#nachricht').val()
-                    }
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    message: $('#nachricht').val()
+                    //captcha: grecaptcha.getResponse()
+                }
             }).done(function (data){
                 alert(data);
                 $("form").each( function() {
@@ -34,7 +33,6 @@
             });
         }
     </script>
-
 </head>
 <body>
 <div class="content">
@@ -56,7 +54,7 @@
         <li class="menu-item"><a href="#sources">Quellen</a></li>
     </ul>
 
-    <div id="section1"</div>
+    <div id="section1">
     <h2>Section1</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
@@ -65,7 +63,7 @@
         <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 
         <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</p>
-    </div>
+    </v>
 
     <div id="datum">
     <h2>Datum</h2>
@@ -101,6 +99,7 @@
                         <textarea id="nachricht" name="message" placeholder="Ihre Nachricht..." style="height:200px" required></textarea>
                     </div>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LetKz8UAAAAAHyVBSGYknAYg3_Benjt4NCAE-jh"></div>
                 <div class="zeile">
                     <input type="button" name="submit" onclick="sendData()" value="Senden">
                 </div>
