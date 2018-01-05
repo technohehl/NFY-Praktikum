@@ -92,6 +92,7 @@
     <div id="formular">
     <h2>Formular</h2>
         <h3>Eingabe</h3>
+        <p>Bei diesem Formular werden Ihre Eingaben in einer Datenbank gespeichert. Auf Wunsch kann Ihre Eingabe auch per Email verschickt werden. Dazu in der dbconnection.php die Zeile mail "scharfschalten"</p>
         <div class="form">
             <form>
                 <div class="zeile">
@@ -124,6 +125,40 @@
                 </div>
             </form>
         </div>
+        <h3>PDF Demo</h3>
+        <p>Bei diesem Formular werden Sie zu einer Seite weitergeleitet, welches ein pdf enthält</p>
+        <div class="form">
+            <form action="pdf.php" method="post">
+                <div class="zeile">
+                    <div class="form-label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="name" name="name" placeholder="Ihr Name..." required>
+                    </div>
+                </div>
+                <div class="zeile">
+                    <div class="form-label">
+                        <label for="Email">Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="email" name="email"  placeholder="Ihre Email Adresse..." required>
+                    </div>
+                </div>
+                <div class="zeile">
+                    <div class="form-label">
+                        <label for="nachricht">Nachricht</label>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="nachricht" name="message" placeholder="Ihre Nachricht..." style="height:200px" required></textarea>
+                    </div>
+                </div>
+                <div class="zeile">
+                    <input type="submit" name="submit" value="Senden">
+                </div>
+            </form>
+        </div>
+
     </div>
 
     <div id="qr code">
