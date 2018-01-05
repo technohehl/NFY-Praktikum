@@ -15,8 +15,16 @@ require('lib/fpdf/fpdf.php');
 
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40, 10, $name);
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(40, 10, "Name: " . $name);
+$pdf->Ln(20);
+$pdf->Cell(40, 10, "Email Adresse: " . $email);
+$pdf->Ln(20);
+$pdf->MultiCell(0,5,$message);
+$pdf->Ln(20);
+$pdf->Cell(40, 10, "IP Adresse: " . $ipaddress);
+$pdf->Image('img/libreboot.png', 60, 100);
+
 $pdf->Output();
 
 ?>
