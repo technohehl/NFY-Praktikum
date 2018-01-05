@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="ef71eaaf-38dc-478b-8f9e-3f914dcfd468" name="webspace" url="http://azubi.newsfactory.de">
+      <webServer id="ef71eaaf-38dc-478b-8f9e-3f914dcfd468" name="webspace" url="http://azubi.newsfactory.de/praktikantenwebspace/raphael">
         <fileTransfer host="web7.newsfactory.de" port="21" rootFolder="/html/praktikantenwebspace/raphael">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" accurateTimestamps="ALWAYS" />

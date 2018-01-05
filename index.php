@@ -126,6 +126,15 @@
         </div>
     </div>
 
+    <div id="qr code">
+        <h2>QR Code</h2>
+        <p>Feel free to contact me here: </p>
+        <?php
+        require_once 'lib/phpqrcode/qrlib.php';
+        QRcode::png('support@technohehl.de');
+        ?>
+    </div>
+
     <div id="about">
         <h2>About</h2>
         <p>This page was developed with ❤ by <a href="https://technohehl.de">Raphael Hehl</a></p>
