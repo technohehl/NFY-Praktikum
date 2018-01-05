@@ -183,6 +183,7 @@
             <li><a href="https://www.opendesktop.org/p/1025846/">Wallpaper</a></li>
             <li><a href="https://github.com/jonsuh/hamburgers">Hamburgers</a></li>
             <li><a href="http://phpqrcode.sourceforge.net/">phpqrcode</a></li>
+            <li><a href="http://www.fpdf.org/">fpdf</a></li>
         </ul>
     </div>
 
